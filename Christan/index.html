@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard</title>
+  <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="icon" type="image/x-icon" href="./img/favicon.png">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav>
+    <div class="sidebar-top">
+      <span class="shrink-btn">
+        <i class='bx bx-chevron-left'></i>
+      </span>
+      <img src="./img/logo.png" class="logo" alt="">
+      <h3 class="hide">Renews</h3>
+    </div>
+
+    <div class="search">
+      <i class='bx bx-search'></i>
+      <input type="text" class="hide" placeholder="Quick Search ...">
+    </div>
+
+    <div class="sidebar-links">
+      <ul>
+        <div class="active-tab"></div>
+        <li class="tooltip-element" data-tooltip="0">
+          <a href="#" class="active" data-active="0" data-content="dashboard">
+            <div class="icon">
+              <i class='bx bx-tachometer'></i>
+              <i class='bx bxs-tachometer'></i>
+            </div>
+            <span class="link hide">Dashboard</span>
+          </a>
+        </li>
+        <li class="tooltip-element" data-tooltip="1">
+          <a href="#" data-active="1" data-content="inventory">
+            <div class="icon">
+              <i class='bx bx-store'></i>
+              <i class='bx bx-store'></i>
+            </div>
+            <span class="link hide">Inventory</span>
+          </a>
+        </li>
+        <li class="tooltip-element" data-tooltip="2">
+          <a href="#" data-active="2" data-content="statistics">
+            <div class="icon">
+              <i class='bx bx-bar-chart-square'></i>
+              <i class='bx bxs-bar-chart-square'></i>
+            </div>
+            <span class="link hide">Statistics</span>
+          </a>
+        </li>
+        <li class="tooltip-element" data-tooltip="3">
+          <a href="#" data-active="3" data-content="profile">
+            <div class="icon">
+              <i class='bx bx-user'></i>
+              <i class='bx bx-user'></i>
+            </div>
+            <span class="link hide">Profile</span>
+          </a>
+        </li>
+        <div class="tooltip">
+          <span class="show">Dashboard</span>
+          <span>Inventory</span>
+          <span>Statistics</span>
+          <span>Profile</span>
+        </div>
+      </ul>
+    </div>
+
+    <div class="sidebar-footer">
+      <a href="#" class="account tooltip-element" data-tooltip="0">
+        <i class='bx bx-user'></i>
+      </a>
+      <div class="admin-user tooltip-element" data-tooltip="1">
+        <div class="admin-profile hide">
+          <img src="./img/face-1.png" alt="">
+          <div class="admin-info">
+            <h3>Christan</h3>
+            <h5>Pharmacist</h5>
+          </div>
+        </div>
+        <a href="#" class="log-out">
+          <i class='bx bx-log-out'></i>
+        </a>
+      </div>
+      <div class="tooltip">
+        <span class="show">Christan</span>
+        <span>Logout</span>
+      </div>
+    </div>
+  </nav>
+
+  <main id="main-content">
+    <h1>My Dashboard</h1>
+    <div style="font-family: Arial, sans-serif; display: flex; justify-content: flex-start; align-items: center; margin: 0; background-color: #f0f0f0;"></div>
+    <div style="background-color: white; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); padding: 20px; width: 300px; margin: 10px;">
+      <h2 style="margin-top: 0; color: #333; font-size: 18px;">Products Out of Stock</h2>
+      <div style="display: flex; align-items: center; margin-top: 20px;">
+        <div style="margin-right: 20px;">
+          <div style="width: 40px; height: 40px; background-color: #ff4d4d; border-radius: 50%; display: flex; justify-content: center; align-items: center;">
+            <i class='bx bx-block' style="color: white; font-size: 24px;"></i>
+          </div>
+        </div>
+        <div style="font-size: 36px; font-weight: bold; color: #333;">0</div>
+      </div>
+    </div>
+    
+    <div style="background-color: white; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); padding: 20px; width: 300px; margin: 10px;">
+      <h2 style="margin-top: 0; color: #333; font-size: 18px;">Low on Stock</h2>
+      <div style="display: flex; align-items: center; margin-top: 20px;">
+        <div style="margin-right: 20px;">
+          <div style="width: 40px; height: 40px; background-color: #ffcc00; border-radius: 50%; display: flex; justify-content: center; align-items: center;">
+            <i class='bx bx-low-vision' style="color: white; font-size: 24px;"></i>
+          </div>
+        </div>
+        <div style="font-size: 36px; font-weight: bold; color: #333;">5</div>
+      </div>
+    </div>
+    
+    <div style="background-color: white; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); padding: 20px; width: 300px; margin: 10px;">
+      <h2 style="margin-top: 0; color: #333; font-size: 18px;">Expired Products</h2>
+      <div style="display: flex; align-items: center; margin-top: 20px;">
+        <div style="margin-right: 20px;">
+          <div style="width: 40px; height: 40px; background-color: #ff4d4d; border-radius: 50%; display: flex; justify-content: center; align-items: center;">
+            <i class='bx bx-error' style="color: white; font-size: 24px;"></i>
+          </div>
+        </div>
+        <div style="font-size: 36px; font-weight: bold; color: #333;">2</div>
+      </div>
+    </div>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
