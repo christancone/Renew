@@ -156,7 +156,7 @@ document.addEventListener("DOMContentLoaded", function() {
                     <input type="text" id="name" value="John Doe" readonly style="width: 100%; padding: 10px; border: 1px solid #ddd; border-radius: 4px; box-sizing: border-box; margin-bottom: 15px;">
                     <label style="display: block; margin-bottom: 5px; color: #666;">Username</label>
                     <input type="text" id="username" value="johndoe123" readonly style="width: 100%; padding: 10px; border: 1px solid #ddd; border-radius: 4px; box-sizing: border-box; margin-bottom: 15px;">
-                </div>
+                </div>kddmdwlmlwm
                 <button style="width: 100%; margin-top: 10px; padding: 10px 20px; border: none; border-radius: 4px; cursor: pointer; display: flex; align-items: center; font-weight: bold; background-color: #2196F3; color: white;">
                     CHANGE PASSWORD
                 </button>
