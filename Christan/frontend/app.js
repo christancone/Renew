@@ -147,7 +147,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 </div>
             </div>
             <div style="flex: 1; display: flex; flex-direction: column; align-items: center;">
-                <img src="./img/face-2.jpg" alt="Profile Picture" style="width: 100px; height: 100px; border-radius: 50%; margin-bottom: 20px;">
+                <img src="imgace-2.jpg" alt="Profile Picture" style="width: 100px; height: 100px; border-radius: 50%; margin-bottom: 20px;">
                 <button style="width: 100%; margin-top: 10px; padding: 10px 20px; border: none; border-radius: 4px; cursor: pointer; display: flex; align-items: center; font-weight: bold; background-color: #2196F3; color: white;">
                     <i class='bx bx-camera'></i> CHOOSE PHOTO
                 </button>
