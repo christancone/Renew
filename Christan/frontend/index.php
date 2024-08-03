@@ -1,3 +1,10 @@
+<?php
+session_start(); // Resume the session
+if (!isset($_SESSION['role']) || $_SESSION['role'] !== 'Pharmacist') {
+    header("Location: ../../Abisha/index.php");
+    exit();
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,6 +17,9 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
+
+
   <nav>
     <div class="sidebar-top">
       <span class="shrink-btn">
@@ -81,7 +91,7 @@
             <h5>Pharmacist</h5>
           </div>
         </div>
-        <a href="#" class="log-out">
+        <a href="logout.php" class="log-out">
           <i class='bx bx-log-out'></i>
         </a>
       </div>
